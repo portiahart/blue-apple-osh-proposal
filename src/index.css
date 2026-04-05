@@ -1,0 +1,355 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Blue Apple Beach Club Design System
+All colors MUST be HSL.
+Brand Colors:
+- Navy: #1F2945 (hsl(224, 40%, 20%))
+- Slate: #566778 (hsl(213, 17%, 41%))
+- Sky: #8FA3BF (hsl(211, 34%, 65%))
+- Pink: #DA6E8E (hsl(340, 59%, 65%))
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 40% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 40% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 40% 20%;
+
+    --primary: 224 40% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 17% 41%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 213 17% 41%;
+
+    --accent: 211 34% 65%;
+    --accent-foreground: 224 40% 20%;
+
+    --pink: 340 59% 65%;
+    --pink-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 17% 85%;
+    --input: 213 17% 95%;
+    --ring: 224 40% 20%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-section: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    
+    /* Shadows */
+    --shadow-luxury: 0 25px 50px -12px hsl(var(--primary) / 0.25);
+    --shadow-card: 0 10px 25px -5px hsl(var(--primary) / 0.1);
+    
+    /* Typography - Blue Apple Brand Fonts */
+    --font-heading: 'Spinnaker', sans-serif;
+    --font-body: 'Helvetica', system-ui, -apple-system, sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Keep light theme for luxury presentation */
+    --background: 0 0% 100%;
+    --foreground: 224 40% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    letter-spacing: 0.025em;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  /* Custom semantic color classes */
+  .text-navy {
+    color: hsl(211 34% 65%);
+  }
+  
+  .text-slate {
+    color: hsl(213 17% 41%);
+  }
+  
+  .text-sky {
+    color: hsl(211 34% 65%);
+  }
+  
+  .text-pink {
+    color: hsl(340 59% 65%);
+  }
+
+  /* Typography hierarchy */
+  .title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  .sub-heading {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+
+  .body-text {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  .body-text-centered {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    text-align: center;
+  }
+
+  /* Bullet list styles - consistent spacing (reduced by 20%) */
+  .bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bullet-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+  }
+
+  .bullet-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: hsl(224 40% 20%);
+    font-weight: bold;
+  }
+
+  /* Sub-bullet styles with enhanced indentation */
+  .sub-bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0 2.5rem;
+  }
+
+  .sub-bullet-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+  }
+
+  .sub-bullet-list li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: hsl(213 17% 41%);
+    font-size: 1em;
+  }
+
+  /* Price highlighting */
+  .price-highlight {
+    color: hsl(var(--pink));
+    font-weight: 600;
+  }
+  
+  /* Separator lines */
+  .section-separator {
+    width: 100%;
+    height: 1px;
+    background: hsl(340 59% 65%);
+    margin: 0 auto;
+  }
+
+  .section-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .section-header-container h2 {
+    margin: 0;
+  }
+
+  /* Image aspect ratios */
+  .section-image {
+    aspect-ratio: 16/6; /* 40% height reduction */
+  }
+
+  .content-image {
+    aspect-ratio: 4/3;
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 1.6rem; /* Smaller to fit on one line */
+      line-height: 1.1;
+    }
+    .sub-heading {
+      font-size: 1.1rem;
+    }
+    .body-text, .body-text-centered {
+      font-size: 0.85rem; /* 1 point smaller */
+      font-weight: 300;
+    }
+    
+    /* Images 1-6: All single images full width and centered on mobile */
+    .section-image, .content-image, .intro-image {
+      width: 100vw !important;
+      margin-left: calc(-50vw + 50%) !important;
+      aspect-ratio: 1 !important; /* Square for all single images */
+    }
+    
+    /* Mobile: intro content stacks vertically */
+    .intro-content-grid {
+      display: block !important;
+    }
+    
+    /* Make hero image full width on mobile too */
+    .aspect-\[16\/9\] {
+      width: 100vw !important;
+      margin-left: calc(-50vw + 50%) !important;
+    }
+    
+    /* IntroSection and ProposalSection images inside grids - make full width */
+    .grid.md\\:grid-cols-2 > div.w-full.overflow-hidden {
+      width: 100vw !important;
+      margin-left: calc(-50vw + 50%) !important;
+      aspect-ratio: 1 !important;
+    }
+    
+    /* Images 7-10: Operation image grid - 2x2 on mobile */
+    .operation-image-grid {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 0.75rem !important;
+      width: 100vw !important;
+      margin-left: calc(-50vw + 50%) !important;
+      padding: 0 1rem !important;
+    }
+    
+    .operation-image-grid .operation-image-item {
+      width: 100% !important;
+      aspect-ratio: 1 !important;
+      overflow: hidden !important;
+    }
+    
+    .operation-image-grid .operation-image-item img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+    }
+    
+    /* Reduce spacing between images and titles by half */
+    .image-title-spacing {
+      margin-top: 0.5rem;
+    }
+    
+    /* More space between destacados items */
+    .destacados-spacing li {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .image-title-spacing {
+      margin-top: 2rem;
+    }
+    
+    /* Desktop: 4 columns for operation image grid */
+    .operation-image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      width: 100%;
+      margin-left: 0;
+      padding: 0;
+    }
+    
+    .operation-image-grid .operation-image-item {
+      width: 100%;
+      aspect-ratio: 1;
+      overflow: hidden;
+    }
+    
+    .operation-image-grid .operation-image-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    /* Desktop intro section - image same height as text */
+    .intro-content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: stretch;
+    }
+    
+    .intro-image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .luxury-text {
+    @apply text-lg leading-relaxed tracking-wide;
+  }
+}
