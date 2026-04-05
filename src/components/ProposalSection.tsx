@@ -48,7 +48,7 @@ Ahorro Osh 130.000 pesos</li>
             <CardContent className="p-6">
               <h3 className="font-heading text-lg text-center text-navy mb-4 uppercase">OPCIÓN 
 PASADÍA COMPLETO</h3>
-              <p className="font-heading text-lg text-center text-pink mb-4 uppercase">2.550.000 PESOS</p>
+              <p className="font-heading text-lg text-center text-pink mb-4 uppercase">255.000 PESOS</p>
               <ul className="bullet-list body-text text-slate">
                 <li>Transporte Marítimo (ida y vuelta)</li>
                 <li>Uso de instalaciones</li>
