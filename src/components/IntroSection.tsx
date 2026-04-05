@@ -29,7 +29,7 @@ const IntroSection = () => {
               No somos un club de playa cualquiera. Somos pioneros, no solo los primeros en esta isla, sino también el primer resort isleño del mundo certificado como B-Corp. Nuestra pasión es ofrecer hospitalidad isleña de alto nivel mientras cuidamos el planeta y a nuestra comunidad.
             </p>
             <p className="body-text-centered text-slate md:text-left">
-              Estamos emocionados de ser considerados como el Club de Playa oficial para huéspedes de Hyatt Cartagena.
+              Estamos emocionados de ser considerados como el Club de Playa oficial para huéspedes de Osh Cartagena.
             </p>
           </div>
         </div>
@@ -49,7 +49,7 @@ const IntroSection = () => {
             <li>Top 10% hoteles mundial - TripAdvisor</li>
             <li>9 años de operación (primer club de playa de lujo en Tierra Bomba)</li>
             <li>Solo 25 minutos desde Cartagena</li>
-            <li>Valores compartidos con Hyatt Group, con enfoque en calidad, gastronomía y sostenibilidad</li>
+            <li>Valores compartidos con Osh Group, con enfoque en calidad, gastronomía y sostenibilidad</li>
             <li>Un equipo de gerencia multilingüe con experiencia internacional en hospitalidad de lujo (Yachting, Belmond Group, cocinas Michelin en Nueva York)</li>
           </ul>
         </div>

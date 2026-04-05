@@ -7,7 +7,7 @@ const BenefitsSection = () => {
         <div className="text-center section-header-container mb-6 md:mb-12">
           <div className="section-separator"></div>
           <h2 className="sub-heading text-navy">
-            VENTAJAS ESTRATÉGICAS PARA HYATT
+            VENTAJAS ESTRATÉGICAS PARA OSH
           </h2>
           <div className="section-separator"></div>
         </div>
@@ -17,10 +17,10 @@ const BenefitsSection = () => {
             <li>Una opción de club de playa "plug and play" sin necesidad de inversión, disponible para comenzar de inmediato</li>
             <li>Contacto directo con la principal tomadora de decisiones</li>
             <li>Enfoque flexible, dispuestos a adaptarnos sobre la marcha</li>
-            <li>Opciones de pago flexibles para Hyatt y sus Huespedes</li>
-            <li>Permiso "white label" en todas las comunicaciones de Hyatt</li>
+            <li>Opciones de pago flexibles para Osh y sus Huespedes</li>
+            <li>Permiso "white label" en todas las comunicaciones de Osh</li>
             <li>Tarifas preferenciales en alojamiento (-30%)</li>
-            <li>Convenio para empleados de Hyatt en todos los locales de Hart Hospitality (Amare Beach, Townhouse, Members Only y Blue Apple Beach)</li>
+            <li>Convenio para empleados de Osh en todos los locales de Hart Hospitality (Amare Beach, Townhouse, Members Only y Blue Apple Beach)</li>
           </ul>
         </div>
 

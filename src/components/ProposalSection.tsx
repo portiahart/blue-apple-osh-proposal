@@ -11,7 +11,7 @@ const ProposalSection = () => {
           <div className="section-separator"></div>
         </div>
         <p className="body-text-centered text-slate max-w-3xl mx-auto mb-6 md:mb-12">
-          Ofrecemos ser el club de playa oficial del Hyatt Cartagena, 
+          Ofrecemos ser el club de playa oficial del Osh Cartagena, 
           brindando a sus huéspedes acceso exclusivo y preferencial con condiciones especiales, desde el momento de reservar:
         </p>
 
@@ -22,7 +22,7 @@ const ProposalSection = () => {
         <div className="space-y-6 mb-8 md:mb-16">
           <ul className="bullet-list body-text text-slate">
             <li>Reservar sin depósito, directamente en el sitio web con un código o vía Whatsapp con nuestro equipo</li>
-            <li>Pagar todo al final del día en el club, o agregar a su cuenta de Hyatt</li>
+            <li>Pagar todo al final del día en el club, o agregar a su cuenta de Osh</li>
             <li>Ahorro Total por Huésped de mínimo 130.000 COP</li>
           </ul>
           
@@ -33,13 +33,13 @@ const ProposalSection = () => {
             <CardContent className="p-6">
               <h3 className="font-heading text-lg text-center text-navy mb-4 uppercase">OPCIÓN 
 PASADÍA FLEXIBLE</h3>
-              <p className="font-heading text-lg text-center text-pink mb-4 uppercase">70.000 PESOS + CONSUMOS</p>
+              <p className="font-heading text-lg text-center text-pink mb-4 uppercase">90.000 PESOS + CONSUMOS</p>
               <ul className="bullet-list body-text text-slate">
                 <li>Transporte Marítimo (ida y vuelta)</li>
                 <li>Uso de instalaciones</li>
                 <li>Asoleadora piscina con toalla</li>
                 <li>Precio publico 200.000. 
-Ahorro Hyatt 130.000 pesos</li>
+Ahorro Osh 130.000 pesos</li>
               </ul>
             </CardContent>
           </Card>
@@ -48,7 +48,7 @@ Ahorro Hyatt 130.000 pesos</li>
             <CardContent className="p-6">
               <h3 className="font-heading text-lg text-center text-navy mb-4 uppercase">OPCIÓN 
 PASADÍA COMPLETO</h3>
-              <p className="font-heading text-lg text-center text-pink mb-4 uppercase">240.000 PESOS</p>
+              <p className="font-heading text-lg text-center text-pink mb-4 uppercase">2.550.000 PESOS</p>
               <ul className="bullet-list body-text text-slate">
                 <li>Transporte Marítimo (ida y vuelta)</li>
                 <li>Uso de instalaciones</li>
@@ -60,7 +60,7 @@ PASADÍA COMPLETO</h3>
                 <li>Masaje de 15 minutos</li>
                 <li>Producto exclusivo, no tiene disponibilidad publico</li>
                 <li>Valor total de 395.000 pesos. 
-Ahorro Hyatt 155.000 pesos</li>
+Ahorro Osh 155.000 pesos</li>
               </ul>
             </CardContent>
           </Card>

@@ -15,8 +15,8 @@ const ClosingSection = () => {
         </div>
         
         <div className="text-center pt-1">
-          <p className="body-text-centered text-slate mb-2">Portia Hart</p>
-          <p className="body-text-centered text-slate mb-6"><em>Fundadora Hart Hospitality</em></p>
+          <p className="body-text-centered text-slate mb-2">Juanita Andrade</p>
+          <p className="body-text-centered text-slate mb-6"><em>Director Comercial, Hart Hospitality</em></p>
           
           <div className="flex justify-center space-x-6 mb-8">
             <a href="https://www.blueapplebeach.com" target="_blank" rel="noopener noreferrer" className="text-slate hover:text-navy transition-colors">

@@ -19,13 +19,10 @@ const HeroSection = ({ backgroundImage }: HeroSectionProps) => {
         <div className="text-center pb-4">
           <h2 className="sub-heading text-navy mb-4 md:mb-6" style={{ fontSize: '1.4375rem' }}>
             Club de playa oficial<br />
-            del Hyatt Cartagena
+            del Osh Hotel Cartagena
           </h2>
           <div className="body-text-centered text-slate">
-            <p className="mb-2">Propuesta dirigida a:</p>
-            <p className="mb-1"><em>Francisco Hernández</em></p>
-            <p className="mb-1"><em>General Manager</em></p>
-            <p className="mb-2">Aug 2025</p>
+            <p className="mb-2">Abr 2026</p>
           </div>
         </div>
       </div>
