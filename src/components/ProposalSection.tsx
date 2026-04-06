@@ -39,7 +39,7 @@ PASADÍA FLEXIBLE</h3>
                 <li>Uso de instalaciones</li>
                 <li>Asoleadora piscina con toalla</li>
                 <li>Precio publico 200.000. 
-Ahorro Osh 130.000 pesos</li>
+Ahorro Osh 110.000 pesos</li>
               </ul>
             </CardContent>
           </Card>
@@ -60,7 +60,7 @@ PASADÍA COMPLETO</h3>
                 <li>Masaje de 15 minutos</li>
                 <li>Producto exclusivo, no tiene disponibilidad publico</li>
                 <li>Valor total de 395.000 pesos. 
-Ahorro Osh 155.000 pesos</li>
+Ahorro Osh 140.000 pesos</li>
               </ul>
             </CardContent>
           </Card>
